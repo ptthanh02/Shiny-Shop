@@ -1,0 +1,12 @@
+# resources/worth.yml
+wooden_sword:
+  sell: 10
+  buy: 20
+
+stone_sword:
+  # If the sell price is not specified, the item cannot be sold
+  buy: 40
+
+bread:
+  sell: -1 # If the sell price is -1, the item cannot be sold same for buy price
+  buy: 5

@@ -1,0 +1,62 @@
+# resources/shops/foods/foods.yml # the folder name must be the same as the sub-shop name in shops.yml
+# The yml file name must be the same as the shop name for it to be recognized
+gui-title: "&cFood Shop"
+rows: 3
+settings:
+  default-click-sound: UI_BUTTON_CLICK
+  decorative-item: none
+
+gui-items:
+  back-button:
+    material: ARROW
+    name: "&7Back"
+    lore:
+      - "&7Go back to the main shop"
+    slot: 9
+    click-sound: UI_BUTTON_CLICK
+    on-click: "back"
+
+sub-shops: # A sub shop can still have sub shop inside if specified
+
+
+# Items in this shop
+items:
+  bread:
+    material: BREAD
+    name: "&fBread"
+    lore:
+      - "&7A staple food"
+      - "&7Restores 5 hunger points"
+    slot: 10
+
+  cooked_chicken:
+    material: COOKED_CHICKEN
+    name: "&fCooked Chicken"
+    lore:
+      - "&7Tasty chicken"
+      - "&7Restores 6 hunger points"
+    slot: 11
+
+  cooked_beef:
+    material: COOKED_BEEF
+    name: "&fCooked Beef"
+    lore:
+      - "&7Juicy steak"
+      - "&7Restores 8 hunger points"
+    slot: 12
+
+  golden_apple:
+    material: GOLDEN_APPLE
+    name: "&6Golden Apple"
+    lore:
+      - "&7Special apple with regeneration"
+      - "&7Restores 4 hunger points"
+    slot: 13
+
+  enchanted_golden_apple:
+    material: ENCHANTED_GOLDEN_APPLE
+    name: "&bEnchanted Golden Apple"
+    lore:
+      - "&7Magical apple with powerful effects"
+      - "&7Restores 4 hunger points"
+    slot: 14

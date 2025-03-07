@@ -1,0 +1,47 @@
+# resources/shops/shops.yml
+gui-title: "ꜱʜᴏᴘ"
+rows: 3
+settings:
+  default-click-sound: UI_BUTTON_CLICK
+  decorative-item: none
+
+sub-shops:
+  end_shop:
+    material: END_STONE
+    name: "ᴇɴᴅ"
+    lore:
+      - "&fClick to view the end shop"
+    slot: 1
+    on-click: "open end_shop"
+
+  nether_shop:
+    material: NETHER_BRICKS
+    name: "ɴᴇᴛʜᴇʀ"
+    lore:
+      - "&fClick to view the nether shop"
+    slot: 2
+    on-click: "open nether_shop"
+
+  gear:
+    material: TOTEM_OF_UNDYING
+    name: "ɢᴇᴀʀ"
+    lore:
+      - "&fClick to view the gear shop"
+    slot: 3
+    on-click: "open gear"
+
+  food:
+    material: COOKED_BEEF
+    name: "ғᴏᴏᴅ"
+    lore:
+      - "&fClick to view the food shop"
+    slot: 4
+    on-click: "open food"
+
+  shard:
+    material: AMETHYST_SHARD
+    name: "ꜱʜᴀʀᴅꜱ"
+    lore:
+      - "&fClick to view the shards shop"
+    slot: 5
+    on-click: "open shard"

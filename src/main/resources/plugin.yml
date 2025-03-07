@@ -1,0 +1,28 @@
+name: ShinyShop
+version: '${version}'
+main: dev.nighter.shinyshop.ShinyShop
+api-version: '1.21'
+authors: [ Nighter ]
+description: A customizable shop plugin
+
+softdepend:
+  - Vault
+  - Essentials
+  - CMI
+
+commands:
+  shop:
+    description: Open the shop GUI
+    usage: /shop [subshop]
+    permission: shinyshop.use
+    aliases: [shops]
+
+permissions:
+  shinyshop.use:
+    description: Allows usage of the shop command
+    default: true
+  shinyshop.admin:
+    description: Allows administration of the shop
+    default: op
+    children:
+      shinyshop.use: true

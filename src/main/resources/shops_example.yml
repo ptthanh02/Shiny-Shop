@@ -1,0 +1,51 @@
+gui-title: "&8Main Shop"
+rows: 3
+settings:
+  default-click-sound: UI_BUTTON_CLICK
+  decorative-item: none
+
+gui-items:
+  close-button:
+    material: BARRIER
+    name: "&cClose"
+    lore:
+      - "&7Close the shop"
+    slot: 18
+    click-sound: UI_BUTTON_CLICK
+    on-click: "close"
+
+sub-shops:
+  weapons:
+    material: DIAMOND_SWORD
+    name: "&4Weapons Shop"
+    lore:
+      - "&7Buy and sell weapons here"
+    slot: 1
+    on-click: "open weapons"
+
+  foods:
+    material: COOKED_BEEF
+    name: "&cFood Shop" # If not specified, the sub-shop name will be used
+    lore:
+      - "&7Buy food items here"
+    slot: 2
+    click-sound: UI_BUTTON_CLICK # If not specified, the default-click-sound will be used
+    on-click: "open foods"
+
+# Example of some items to be bought in the main shop
+items:
+  wooden_sword: # The key is the item id
+    material: WOODEN_SWORD
+    name: "&fWooden Sword" # If not specified, the material name will be used
+    lore: # If not specified, the material lore will be used
+      - "&7A basic wooden sword"
+    slot: 3
+    # buy and sell price will be defined in the worth.yml
+
+  stone_sword:
+    material: STONE_SWORD
+    name: "&8Stone Sword"
+    lore:
+      - "&7A slightly better sword"
+    slot: 4
+    # buy and sell price will be defined in the worth.yml
